@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+}
+
+
+.main1{
+    height: 100vh;
+    width: 100%;
+    background-color: #0081CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 button{
+    height: 20vh;
+    width: 300px;
+    background-color: #C34A36;
+    border: grey;
+    border-radius: 9px;
+    font-size: 25px;
+}
+
+
+.div1 a{
+    text-decoration: none;
+    color: white;
+}
+

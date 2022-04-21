@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index1.css">
+</head>
+<body>
+    <nav id="nav1">
+        <article class="art1">
+            <div class="div1">
+              
+                        <input type="text" id="input" />
+                        <button id="btn" onclick="voice()">click to speak</button>
+                        
+                   
+            </div>
+        </article>
+    </nav>
+            <section>
+                <article class="art2">
+                    
+                    <div id="result">
+
+                    </div>
+                </article>
+            </section>
+            <script>
+                function voice(){
+                    var recognition= new webkitSpeechRecognition();
+                    recognition.lan="en-GB";
+                    recognition.onresult=function (event){
+                        console.log(event);
+                        document.getElementById("input").value =event.results[0][0].transcript;
+
+                    }
+                    recognition.start();
+                }
+            </script>
+            <script src="./imbd1.js"></script>
+</body>
+</html>

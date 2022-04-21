@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./global2.css" />
+  </head>
+  <body onload="setTimeout(function(){window.location = 'end.html';}, 21000)">
+    <section class="section1">
+      <article class="container">
+        <div class="result">124</div>
+        <div class="question" id="questionc">question</div>
+        <div class="option">
+          <h1>1:</h1>
+          <button id="op1">option1</button>
+          <h1>2:</h1>
+          <button id="op2">option2</button>
+          <h1>3:</h1>
+          <button id="op3">option3</button>
+          <h1>4:</h1>
+          <button id="op4">option4</button>
+        </div>
+        <div class="evaluate">
+          <button class="submit">Submit</button>
+          <button class="nav" id="prev">previous</button>
+          <button class="nav" id="nex">next</button>
+        </div>
+
+        <div class="ui">
+          <a href=""><h1>your final score in UI format</h1></a>
+          <button>
+            <h1>Timer:</h1>
+            <div id="countdown"></div>
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <script src="./index2.js"></script>
+  </body>
+</html>
